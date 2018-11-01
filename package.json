@@ -1,0 +1,22 @@
+{
+  "name": "starter-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manisha1896/cool-website-theme-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manisha1896/cool-website-theme-1/issues"
+  },
+  "homepage": "https://github.com/manisha1896/cool-website-theme-1#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
