@@ -132,10 +132,6 @@ body {
   animation: movebtn 1s ease-in 0.8s;
   animation-fill-mode: backwards; }
 
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
 .btn--white {
   background-color: #fff;
   color: #777; }
@@ -149,6 +145,10 @@ body {
   .btn:hover::after {
     transform: scale(1.5);
     opacity: 0; }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn::after {
   content: "";
@@ -231,7 +231,7 @@ body {
   position: relative;
   perspective: 800px; }
   .card__side {
-    transition: all 1.7s;
+    transition: all 1s;
     height: 50rem;
     width: 100%;
     border-radius: 3px;
@@ -239,8 +239,12 @@ body {
     position: absolute;
     top: 0;
     backface-visibility: hidden; }
+    .card__side--front {
+      background: #fff; }
     .card__side--back {
       transform: rotateY(-180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
@@ -252,6 +256,8 @@ body {
     background-blend-mode: screen;
     background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url("/img/nat-5.jpg");
     clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0); }
+  .card__heading {
+    positon: absolute; }
 
 .section-about {
   background-color: #f7f7f7;
